@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SortContainer from './components/Sort/SortContainer';
+import UsersListContainer from './components/Users/UsersListContainer';
+import {Route, Routes} from 'react-router-dom';
+import UserContainer from './components/Users/User/UserContainer';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <div className="App">
+            <SortContainer/>
+            <Routes>
+                <Route path="/" element={<UsersListContainer/>}/>
+                <Route path="/:userID" element={<UserContainer/>}/>
+            </Routes>
+        </div>
+    );
 }
 
 export default App;

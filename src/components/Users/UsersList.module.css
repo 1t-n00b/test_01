@@ -1,0 +1,50 @@
+.usersList {
+    margin: 5px 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+h2 {
+    font-weight: 700;
+}
+.someUser {
+    min-width: 420px;
+    background-color: #F3F3F3;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 12px;
+}
+
+.someUser:hover {
+    outline: 1px solid #4B51EF;
+}
+
+.personInfo {
+
+}
+
+.someInfo {
+    display: flex;
+}
+
+.someInfo span {
+    color: #A3A3A3;
+}
+
+.someInfo p {
+    color: #000;
+    padding-left: 7px;
+}
+
+a {
+    text-decoration: none;
+    color: #4B51EF;
+}
+
+h3 {
+    text-align: end;
+}
